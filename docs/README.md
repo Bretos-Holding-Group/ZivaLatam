@@ -1,101 +1,164 @@
 # Ziva Engineering System (ZES)
 
-> Building Trust Through Engineering Excellence.
+> **Documentation is the foundation of every engineering decision.**
 
----
+Welcome to the official documentation of Ziva Latam.
 
-## Purpose
-
-The Ziva Engineering System (ZES) is the official engineering knowledge framework of Ziva Latam.
-
-Its mission is to ensure that every decision, process, architecture, policy, standard and implementation can be understood, audited, maintained and evolved throughout the lifetime of the project.
-
-The ZES exists to transform knowledge into a strategic asset of the organization.
-
----
-
-# Engineering Principles
-
-Every engineering decision must respect the following principles:
-
-- Documentation First
-- Architecture Before Implementation
-- Security by Design
-- Privacy by Design
-- Simplicity Before Complexity
-- Evidence-Based Decisions
-- Long-Term Maintainability
-- Continuous Improvement
-- Knowledge Belongs to the Organization
+This directory contains the complete engineering, architecture, governance and product knowledge that defines how Ziva Latam is built and evolved.
 
 ---
 
 # Documentation Structure
 
-```text
+```
 docs/
-
-engineering/
-product/
-architecture/
-governance/
-knowledge/
-decisions/
-_templates/
-```
-
-Each directory has a clearly defined responsibility and must contain only documents related to its domain.
-
----
-
-# Reading Order
-
-Every engineer, contributor or AI assistant must read the documentation in the following order:
-
-1. Engineering Charter
-2. Product Vision
-3. MVP Scope
-4. Project Rules
-5. Thinking Framework
-6. Architecture Principles
-7. Security by Design
-8. Architecture Decision Records (ADR)
-9. Additional documentation as required
-
----
-
-# Documentation Lifecycle
-
-Every document follows the same lifecycle.
-
-```text
-Idea
-    ↓
-Draft
-    ↓
-Review
-    ↓
-Approved
-    ↓
-Active
-    ↓
-Deprecated
-    ↓
-Archived
+│
+├── 00_ENGINEERING_CHARTER.md
+│
+├── engineering/
+│
+│   ├── policies/
+│   ├── standards/
+│   ├── workflows/
+│   ├── templates/
+│   └── references/
+│
+├── architecture/
+│
+│   ├── adr/
+│   ├── blueprints/
+│   ├── diagrams/
+│   └── decisions/
+│
+├── product/
+│
+├── governance/
+│
+└── onboarding/
 ```
 
 ---
 
-# Repository Philosophy
+# Documentation Categories
 
-The repository must always represent the current state of the project.
+## Engineering
 
-Ideas discussed outside the repository are not considered part of Ziva until they have been documented, reviewed and approved.
+Defines how software is developed.
+
+Includes:
+
+- Policies
+- Standards
+- Workflows
+- Templates
+- References
 
 ---
 
-# Engineering Motto
+## Architecture
 
+Defines why the system is designed the way it is.
+
+Includes:
+
+- Architecture Decision Records (ADR)
+- System Blueprints
+- Technical Decisions
+
+---
+
+## Product
+
+Defines what Ziva Latam builds.
+
+Includes:
+
+- Product Vision
+- MVP Scope
+- Roadmaps
+- User Stories
+- Glossary
+
+---
+
+## Governance
+
+Defines how the engineering system evolves.
+
+Includes:
+
+- Decision Logs
+- Changelogs
+- Releases
+
+---
+
+## Onboarding
+
+Defines how new contributors become productive.
+
+Includes:
+
+- Developer Guide
+- AI Onboarding
+- Project Map
+
+---
+
+# Core Principles
+
+The documentation follows these principles:
+
+1. Documentation First.
+2. Architecture Before Implementation.
+3. Decisions Must Be Traceable.
+4. Security By Design.
+5. Repository As Institutional Memory.
+
+---
+
+# Navigation Order
+
+New contributors should read:
+
+1. README.md (repository root)
+2. docs/README.md
+3. 00_ENGINEERING_CHARTER.md
+4. Engineering Policies
+5. ADR Index
+6. Product Documentation
+
+---
+
+# Governance
+
+All documentation is governed by the Ziva Engineering System (ZES).
+
+Changes must comply with:
+
+- Engineering Charter
+- Engineering Policies
+- Accepted ADRs
+
+---
+
+# Current Status
+
+Engineering Phase:
+
+**Foundation**
+
+System Status:
+
+**Documentation First**
+
+Implementation Status:
+
+**No production code has been written yet.**
+
+This is intentional.
+
+The engineering system is being established before implementation begins.
 > We build trust before features.
 
 ---
