@@ -125,7 +125,7 @@ Create:
 
 Then add ADRs in strict order:
 
-- ADR-0001 → ADR-0019 (in sequence)
+- ADR-0001 → ADR-0021 (in sequence)
 - NO skipping allowed
 - NO merging allowed
 - NO partial files allowed
@@ -174,7 +174,7 @@ Before writing ANY code:
 
 Validate:
 
-- ADR-0001 → ADR-0019 exist
+- ADR-0001 → ADR-0021 exist
 - repository structure matches architecture
 - no business logic exists
 - no premature implementation present
