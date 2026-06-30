@@ -331,9 +331,3 @@ This ADR defines:
 ## Core Principle
 
 > Trust cannot exist without privacy. Privacy cannot exist without separation.
-
----
-
-## Status
-
-Accepted
