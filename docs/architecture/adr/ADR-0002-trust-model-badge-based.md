@@ -162,9 +162,3 @@ This decision directly affects:
 This ADR defines the core identity of Ziva Latam as a financial trust infrastructure system.
 
 It replaces traditional scoring mechanisms with structured, explainable trust signals.
-
----
-
-## Status
-
-Accepted
