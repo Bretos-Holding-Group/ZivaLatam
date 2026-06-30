@@ -93,9 +93,3 @@ Rejected because:
 This ADR represents the first foundational decision of the Ziva Engineering System (ZES).
 
 All subsequent architectural decisions must align with this principle.
-
----
-
-## Status
-
-Accepted
