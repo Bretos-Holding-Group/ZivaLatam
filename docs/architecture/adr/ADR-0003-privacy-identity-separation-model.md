@@ -222,9 +222,3 @@ This ADR establishes one of the core principles of Ziva Latam:
 The system does not "know everything" about the user in one place.
 
 It intentionally separates knowledge to protect privacy and reduce risk.
-
----
-
-## Status
-
-Accepted
