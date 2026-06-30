@@ -261,9 +261,3 @@ This ADR defines:
 ## Core Principle
 
 > Architecture is meaningless unless code enforces it.
-
----
-
-## Status
-
-Accepted
