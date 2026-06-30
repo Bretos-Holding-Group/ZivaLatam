@@ -226,9 +226,3 @@ This ADR defines:
 ## Core Principle
 
 > External systems consume trust, not data.
-
----
-
-## Status
-
-Accepted
