@@ -267,10 +267,4 @@ This ADR defines:
 
 ## Core Principle
 
-> No implementation is allowed without validated architecture.
-
----
-
-## Status
-
-Accepted
+> No implementation is allowed without validated architecture
