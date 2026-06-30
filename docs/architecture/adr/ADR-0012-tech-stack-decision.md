@@ -234,9 +234,3 @@ This ADR defines:
 ## Core Principle
 
 > Architecture defines the system. Stack only enables it.
-
----
-
-## Status
-
-Accepted
