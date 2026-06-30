@@ -44,15 +44,7 @@ Ziva Latam defines a **First Implementation Contract (FIC)** that governs the cr
 
 Only the following module may be implemented first:
 
-```
-/src/trust/
-```
-
-Specifically:
-
-```
 /src/trust/core/
-```
 
 ---
 
