@@ -325,9 +325,3 @@ This ADR defines:
 ## Related Domains
 
 - ADR-0015 — First Implementation Contract (Defines scope and contractual boundaries of the first implementation phase)
-
----
-
-## Status
-
-Accepted
