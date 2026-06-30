@@ -265,9 +265,3 @@ This ADR defines:
 ## Core Principle
 
 > If it is not in the contract, it does not exist in the system.
-
----
-
-## Status
-
-Accepted
