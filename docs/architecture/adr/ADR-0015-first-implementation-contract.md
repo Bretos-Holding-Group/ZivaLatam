@@ -251,9 +251,3 @@ This ADR defines:
 ## Core Principle
 
 > The first implementation defines the culture of the entire system.
-
----
-
-## Status
-
-Accepted
