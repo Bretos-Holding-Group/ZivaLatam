@@ -279,9 +279,3 @@ This ADR defines:
 ## Core Principle
 
 > A financial trust system without deterministic tests is invalid by design.
-
----
-
-## Status
-
-Accepted
