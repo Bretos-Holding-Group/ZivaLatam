@@ -254,9 +254,3 @@ This ADR defines:
 ## Core Principle
 
 > The quality of the system is determined before the first line of code exists.
-
----
-
-## Status
-
-Accepted
