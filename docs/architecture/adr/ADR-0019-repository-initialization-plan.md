@@ -245,9 +245,3 @@ Repository is valid if:
 # Core Principle
 
 > A repository is not a folder. It is an execution of architecture.
-
----
-
-## Status
-
-Accepted
