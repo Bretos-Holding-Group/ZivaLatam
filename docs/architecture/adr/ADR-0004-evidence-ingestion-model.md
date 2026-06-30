@@ -228,9 +228,3 @@ This model is explicitly designed to evolve into:
 - Engineering
 - Product
 - Governance
-
----
-
-## Status
-
-Accepted
