@@ -321,9 +321,3 @@ This ADR defines:
 ## Core Principle
 
 > A financial system is only as reliable as its test data.
-
----
-
-## Status
-
-Accepted
