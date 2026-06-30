@@ -206,9 +206,3 @@ However:
 - Engineering
 - Product
 - Governance
-
----
-
-## Status
-
-Accepted
