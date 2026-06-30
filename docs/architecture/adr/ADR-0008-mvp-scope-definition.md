@@ -224,8 +224,3 @@ This ADR defines:
 
 > If a feature does not validate financial trust generation, it does not belong in MVP.
 
----
-
-## Status
-
-Accepted
