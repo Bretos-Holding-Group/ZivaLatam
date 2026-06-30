@@ -304,9 +304,3 @@ This ADR defines:
 ## Core Principle
 
 > If it cannot be explained in rules, it does not exist in Ziva Trust Engine.
-
----
-
-## Status
-
-Accepted
