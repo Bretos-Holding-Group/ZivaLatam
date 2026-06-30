@@ -194,9 +194,3 @@ This ADR defines:
 ## Core Principle
 
 > If the system cannot run conceptually, it should not be built technically.
-
----
-
-## Status
-
-Accepted
