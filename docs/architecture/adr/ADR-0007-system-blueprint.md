@@ -244,9 +244,3 @@ This ADR defines the real structure of:
 ## Core Principle
 
 > Ziva is not a monolith. It is a trust infrastructure composed of isolated, explainable services.
-
----
-
-## Status
-
-Accepted
