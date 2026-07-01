@@ -1,79 +1,151 @@
-# Kernel
+# ZES Kernel
 
-**Domain:** Core Platform
-
-**Status:** Reserved
-
-**Owner:** Ziva Engineering System (ZES)
-
-**Version:** 1.0.0
+**Layer:** Execution Core  
+**Status:** Reserved  
+**Owner:** Ziva Engineering System (ZES)  
+**Version:** 1.0.0  
 
 ---
 
-# Purpose
+# 1. Purpose
 
-The Kernel contains the deterministic core of the Ziva ecosystem.
+The Kernel is the execution coordination layer of the Ziva Engineering System.
 
-This domain hosts the fundamental execution engines that define
-the behavior of the platform and provide the foundation for
-higher-level business domains.
+It does NOT contain business logic.
 
-The Kernel is the most stable layer of the system and evolves only
-through approved architectural decisions.
+It does NOT make decisions.
 
----
-
-# Objectives
-
-This repository exists to:
-
-- host deterministic core engines
-- preserve architectural integrity
-- centralize platform execution logic
-- minimize systemic risk
-- support long-term maintainability
+It ONLY orchestrates deterministic execution flows across domains.
 
 ---
 
-# Scope
+# 2. Core Responsibility
 
-The Kernel may contain:
+The Kernel MUST:
 
-- Trust Engine
-- execution engines
-- orchestration engines
-- deterministic evaluators
-- shared execution pipelines
-
-Business-specific logic must remain outside the Kernel unless
-explicitly approved by architecture governance.
+- coordinate domain execution order
+- enforce architectural boundaries
+- ensure deterministic flow execution
+- prevent cross-domain contamination
+- act as a strict orchestration layer
 
 ---
 
-# Dependencies
+# 3. What the Kernel Is NOT
 
-The Kernel should have the minimum possible number of dependencies.
+The Kernel MUST NOT:
 
-Whenever feasible, other domains depend on the Kernel—not the reverse.
-
----
-
-# Governance Principles
-
-The Kernel must remain:
-
-- deterministic
-- stable
-- auditable
-- technology-independent whenever possible
-- architecture-driven
-
-Changes to the Kernel require formal architectural approval.
+- implement Trust logic
+- implement Credit logic
+- implement Evidence validation logic
+- perform intelligence processing
+- store persistent data
+- access external systems
 
 ---
 
-# Current Status
+# 4. Execution Model
 
-Reserved for future implementation.
+The Kernel operates as a **deterministic orchestrator**:
 
-No production code has been approved at this stage.
+```
+Evidence → Trust → Credit → Intelligence
+            ↑
+         Kernel
+```
+
+The Kernel is responsible for invoking, not interpreting.
+
+---
+
+# 5. Core Principle
+
+> The Kernel does not think. It executes structure.
+
+All logic lives in domains.
+All coordination lives in the Kernel.
+
+---
+
+# 6. Execution Rules
+
+The Kernel MUST:
+
+- execute domains in defined order
+- pass validated outputs only
+- reject malformed domain responses
+- remain stateless
+- avoid side effects
+
+---
+
+# 7. Dependency Rules
+
+The Kernel MAY depend on:
+
+- domain interfaces
+- shared contracts (ADR-0011)
+- internal execution utilities
+
+The Kernel MUST NOT depend on:
+
+- external APIs
+- infrastructure services
+- domain-specific business logic
+- identity systems
+
+---
+
+# 8. Isolation Principle
+
+Each domain MUST remain unaware of:
+
+- Kernel internal orchestration logic
+- sibling domain implementations
+
+The Kernel is the ONLY coordination point.
+
+---
+
+# 9. Failure Handling
+
+If any domain fails:
+
+- Kernel MUST stop execution
+- Kernel MUST NOT attempt partial recovery logic
+- Kernel MUST return structured failure state
+
+No hidden retries allowed.
+
+---
+
+# 10. Determinism Requirement
+
+Given the same inputs:
+
+- same execution order
+- same domain outputs
+- same final system state
+
+No randomness is permitted.
+
+---
+
+# 11. Governance Alignment
+
+Kernel follows:
+
+- Documentation First
+- Architecture First
+- Deterministic Systems
+- Auditability by Default
+- Regulatory Safety Boundary Layer (ZES-RSBL)
+- Environmental Efficiency by Design
+
+---
+
+# 12. Current Status
+
+The Kernel is defined but not implemented.
+
+It represents the execution backbone of the Ziva Engineering System.
