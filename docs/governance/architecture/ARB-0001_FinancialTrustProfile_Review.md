@@ -1,6 +1,6 @@
 # ARB-0001: FinancialTrustProfile Review
 
-**Status:** Approved
+**Status:** closed
 
 **Review Date:** 2026-06-30
 
@@ -169,6 +169,7 @@ Positive.
 
 ---
 
+
 # Resolution
 
 Architecture finding accepted.
@@ -184,6 +185,35 @@ ACB-0001 remains **In Review** until all documentation updates are completed.
 > Internal identifiers exist to support system operation, not external visibility.
 
 ---
+
+---
+
+## Closure Summary
+
+ARB-0001 is closed following successful resolution of all dependent architectural requirements.
+
+### Resolved Dependencies
+
+- ACB-0001 completed (Financial Trust Profile split enforcement)
+- ADR-0011 updated to enforce internal/external FTP separation
+- Identity isolation rules fully implemented
+- External exposure of internal identifiers eliminated
+
+---
+
+## Final Outcome
+
+- Financial Trust Profile architecture is compliant
+- Internal and external contract boundaries are formally enforced
+- No remaining dependency blockers on this ARB
+
+---
+
+## Certification Impact
+
+ARB-0001 no longer blocks Foundation Certification.
+
+> Status: Closed and resolved
 
 # Version
 
