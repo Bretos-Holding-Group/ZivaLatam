@@ -49,6 +49,8 @@ These contracts define:
 
 # Core Domain Contracts
 
+---
+
 ## 1. Evidence Contract
 
 Represents any financial input submitted by a user.
@@ -63,7 +65,10 @@ type EvidenceType =
 
 interface Evidence {
   evidenceId: string;
-  userId: string; // internal UUID only
+
+  // Internal-only identifier (NOT exposed externally)
+  internalUserId: string;
+
   type: EvidenceType;
   source: "manual" | "upload" | "integration";
   timestamp: string;
@@ -78,7 +83,7 @@ interface Evidence {
 
   verificationStatus: "pending" | "validated" | "rejected";
 }
-```
+````
 
 ---
 
@@ -98,7 +103,10 @@ type BadgeType =
 
 interface Badge {
   badgeId: string;
-  userId: string;
+
+  // Internal-only reference
+  internalUserId: string;
+
   type: BadgeType;
 
   status: "active" | "revoked" | "pending";
@@ -121,9 +129,19 @@ interface Badge {
 
 Represents the final output consumed by B2B systems.
 
+### IMPORTANT: Identity Isolation Rule (ACB-0001)
+
+This contract is split into internal and external representations.
+
+---
+
+### 3.1 Internal FTP
+
+Used only inside Trust Engine.
+
 ```typescript
-interface FinancialTrustProfile {
-  userId: string;
+interface FinancialTrustProfileInternal {
+  internalUserId: string;
 
   badges: Badge[];
 
@@ -145,6 +163,47 @@ interface FinancialTrustProfile {
 
 ---
 
+### 3.2 External FTP
+
+Used for APIs and external systems.
+
+```typescript
+interface FinancialTrustProfileExternal {
+  badges: Badge[];
+
+  trustSignals: {
+    incomeStability: "low" | "medium" | "high";
+    paymentReliability: "low" | "medium" | "high";
+    documentationStrength: "low" | "medium" | "high";
+  };
+
+  verificationStatus: {
+    identity: boolean;
+    income: boolean;
+    evidenceCoverage: "none" | "partial" | "complete";
+  };
+
+  generatedAt: string;
+}
+```
+
+---
+
+## Identity Isolation Rule
+
+Under no condition may internal identifiers:
+
+* be exposed outside system boundaries
+* appear in API responses
+* be included in exported datasets
+* leak through badge or trust layers
+
+This enforces:
+
+> Least Knowledge by Design (ZES core principle)
+
+---
+
 ## 4. Trust Event Contract
 
 Used internally for orchestration between services.
@@ -154,7 +213,7 @@ interface TrustEvent {
   eventId: string;
   type: "EVIDENCE_SUBMITTED" | "EVIDENCE_VALIDATED" | "BADGE_GENERATED";
 
-  userId: string;
+  internalUserId: string;
   payload: Record<string, unknown>;
 
   timestamp: string;
@@ -175,9 +234,9 @@ Modules cannot modify core contracts.
 
 Any change to contracts must:
 
-- increment version
-- create ADR reference
-- preserve backward compatibility where possible
+* increment version
+* create ADR reference
+* preserve backward compatibility where possible
 
 ---
 
@@ -191,9 +250,9 @@ No partial or inferred structures allowed.
 
 ### 4. No Cross-Domain Leakage
 
-- Evidence structures cannot contain identity data
-- Badges cannot expose raw evidence
-- FTP cannot expose internal system IDs
+* Evidence structures cannot contain identity data
+* Badges cannot expose raw evidence
+* FTP external cannot expose internal system IDs
 
 ---
 
@@ -203,9 +262,9 @@ No partial or inferred structures allowed.
 
 Rejected because:
 
-- leads to inconsistency between services
-- increases integration risk
-- breaks system predictability
+* leads to inconsistency between services
+* increases integration risk
+* breaks system predictability
 
 ---
 
@@ -213,9 +272,9 @@ Rejected because:
 
 Rejected because:
 
-- guarantees architectural drift
-- makes system unmaintainable
-- breaks long-term scalability
+* guarantees architectural drift
+* makes system unmaintainable
+* breaks long-term scalability
 
 ---
 
@@ -223,9 +282,9 @@ Rejected because:
 
 Rejected because:
 
-- couples system to storage layer
-- reduces architectural flexibility
-- increases migration cost
+* couples system to storage layer
+* reduces architectural flexibility
+* increases migration cost
 
 ---
 
@@ -233,20 +292,20 @@ Rejected because:
 
 ### Positive
 
-- strict consistency across modules
-- predictable system behavior
-- easier debugging and auditing
-- strong foundation for API design
-- clear implementation contracts for developers
+* strict consistency across modules
+* predictable system behavior
+* easier debugging and auditing
+* strong foundation for API design
+* clear implementation contracts for developers
 
 ---
 
 ### Negative
 
-- reduced flexibility for ad-hoc changes
-- requires strict governance
-- increases initial development discipline
-- slower prototyping speed
+* reduced flexibility for ad-hoc changes
+* requires strict governance
+* increases initial development discipline
+* slower prototyping speed
 
 ---
 
@@ -254,14 +313,16 @@ Rejected because:
 
 This ADR defines:
 
-- internal communication schema
-- data structures for all core modules
-- foundation for implementation layer (MXL)
-- strict boundaries between services
-- basis for API contract stability
+* internal communication schema
+* data structures for all core modules
+* foundation for implementation layer (MXL)
+* strict boundaries between services
+* basis for API contract stability
 
 ---
 
 ## Core Principle
 
 > If it is not in the contract, it does not exist in the system.
+
+```
