@@ -1,46 +1,31 @@
-# ACB-0001 — FinancialTrustProfile Contract Separation (FTP)
+# ACB-0001 — Financial Trust Profile (FTP) Split
 
-**Status:** In Review  
-**Type:** Architecture Consolidation Backlog Item  
-**Related ARB:** ARB-0001  
-**Related ADRs:** ADR-0011, ADR-0006, ADR-0018  
+## Status
+In Review
 
----
+## Context
+The FinancialTrustProfile currently exposes `userId` in external-facing structures.
 
-# 1. Context
+This violates system principles of least knowledge and identity isolation.
 
-The FinancialTrustProfile (FTP) contract currently includes `userId` in its unified structure.
+## Required Fix
+Split FTP into two contracts:
 
-This creates a conflict between:
+### Internal
+- FinancialTrustProfileInternal
+- Contains userId
+- Used only inside Trust system
 
-- internal system identity requirements (Trust Engine)
-- external data exposure rules (B2B / API consumers)
+### External
+- FinancialTrustProfileExternal
+- MUST NOT contain userId
+- Used for APIs and external systems
 
-ARB-0001 has already approved the architectural decision to split internal and external representations of FTP.
+## Constraint
+No external system may access internal identifiers.
 
----
+## Dependency
+This change must be reflected in ADR-0011 before certification.
 
-# 2. Problem
-
-Current implementation violates:
-
-- ADR-0006 → prohibits exposure of internal system identifiers
-- ADR-0018 → prohibits identity reconstruction via exported structures
-
-The current FTP design exposes:
-
-- `userId` in external contract surfaces
-
-This creates a privacy boundary violation by design, not by implementation error.
-
----
-
-# 3. Decision Scope
-
-ACB-0001 defines the required resolution:
-
-## Required Structural Change
-
-Introduce two separate contracts:
-
-### 1. Internal Contract
+## Outcome
+Enables privacy-safe financial data exposure model.
