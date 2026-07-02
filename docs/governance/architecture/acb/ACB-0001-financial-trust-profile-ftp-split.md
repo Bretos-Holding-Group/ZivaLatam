@@ -1,7 +1,7 @@
 # ACB-0001 — Financial Trust Profile (FTP) Split
 
 ## Status
-In Review
+Resolved
 
 ## Context
 The FinancialTrustProfile currently exposes `userId` in external-facing structures.
