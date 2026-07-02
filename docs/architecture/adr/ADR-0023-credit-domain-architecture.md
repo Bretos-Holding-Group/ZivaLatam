@@ -100,15 +100,9 @@ Credit Domain MUST NOT consume:
 
 # 8. Output Contract
 
-Credit Domain outputs are split into internal and external representations:
-
-## CreditSignalInternal
-
-Used only within Trust/Credit boundary.
-
 ```typescript
 interface CreditSignalInternal {
-  userId: string;
+  internalUserId: string;
 
   creditScore: number; // 0–1000 normalized scale
 
@@ -120,110 +114,67 @@ interface CreditSignalInternal {
 
   derivedFrom: string[];
 }
-````
-
----
-
-## CreditSignalExternal
-
-Used for Intelligence Domain and external systems.
-
-```typescript
+```, 
 interface CreditSignalExternal {
-  creditScore: number; // 0–1000 normalized scale
-
+  creditScore: number;
   riskLevel: "low" | "medium" | "high";
-
   creditCapacityEstimate: number;
-
   confidence: number;
-
   derivedFrom: string[];
 }
 ```
-
----
-
-# 9. System Position
-
-```
+9. System Position
 Evidence → Trust → Credit → Intelligence
-```
 
-Credit is a **translation layer**, not a decision authority.
+Credit is a translation layer, not a decision authority.
 
----
-
-# 10. Regulatory Positioning
+10. Regulatory Positioning
 
 Credit Domain is defined as:
 
-* non-banking
-* non-custodial
-* advisory layer only
+non-banking
+non-custodial
+advisory layer only
 
 It does not qualify as:
 
-* lender
-* financial institution
-* payment processor
-
----
-
-# 11. Determinism Rules
+lender
+financial institution
+payment processor
+11. Determinism Rules
 
 Credit outputs MUST be:
 
-* reproducible
-* deterministic
-* explainable
-* traceable to inputs
+reproducible
+deterministic
+explainable
+traceable to inputs
 
 No stochastic scoring allowed.
 
----
-
-# 12. Alternatives Considered
-
-### 1. Full lending engine
+12. Alternatives Considered
+1. Full lending engine
 
 Rejected due to regulatory exposure
 
-### 2. Embedded banking model
+2. Embedded banking model
 
 Rejected due to custody implications
 
-### 3. Pure Trust Engine extension
+3. Pure Trust Engine extension
 
 Rejected due to scope overload and lack of separation
 
----
+13. Consequences
+Positive
+clear financial abstraction layer
+regulatory-safe architecture boundary
+improved modularity
+separation of trust vs credit logic
+Negative
+slower product iteration
+stricter scoring constraints
+additional abstraction overhead
+14. Outcome
 
-# 13. Consequences
-
-## Positive
-
-* clear financial abstraction layer
-* regulatory-safe architecture boundary
-* improved modularity
-* separation of trust vs credit logic
-
-## Negative
-
-* slower product iteration
-* stricter scoring constraints
-* additional abstraction overhead
-
----
-
-# 14. Outcome
-
-The Credit Domain becomes:
-
-> a deterministic financial interpretation layer that does not control money, only risk representation.
-
----
-
-> Credit does not decide. It interprets.
-
-````
+Credit does not decide. It interprets.
