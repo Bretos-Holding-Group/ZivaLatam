@@ -1,7 +1,7 @@
 # ACB-0002 — Kernel Architecture Formalization
 
 ## Status
-In Review
+Resolved
 
 ## Context
 Kernel implementation exists in src/kernel but lacks full architectural enforcement definition at ADR level.
@@ -21,3 +21,13 @@ ADR-0022 Kernel Architecture Definition
 
 ## Outcome
 Kernel becomes fully deterministic orchestration-only layer
+
+---
+
+## Governance Synchronization
+
+Resolved by ARB-0002.
+
+Governance state synchronized according to Governance Authority Rules v1.0.0.
+
+Final authoritative state defined by ARB.
