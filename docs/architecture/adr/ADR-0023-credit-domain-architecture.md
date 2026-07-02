@@ -100,10 +100,14 @@ Credit Domain MUST NOT consume:
 
 # 8. Output Contract
 
-Credit Domain outputs:
+Credit Domain outputs are split into internal and external representations:
 
-```typescript id="c1ts"
-interface CreditSignal {
+## CreditSignalInternal
+
+Used only within Trust/Credit boundary.
+
+```typescript
+interface CreditSignalInternal {
   userId: string;
 
   creditScore: number; // 0–1000 normalized scale
@@ -117,6 +121,26 @@ interface CreditSignal {
   derivedFrom: string[];
 }
 ````
+
+---
+
+## CreditSignalExternal
+
+Used for Intelligence Domain and external systems.
+
+```typescript
+interface CreditSignalExternal {
+  creditScore: number; // 0–1000 normalized scale
+
+  riskLevel: "low" | "medium" | "high";
+
+  creditCapacityEstimate: number;
+
+  confidence: number;
+
+  derivedFrom: string[];
+}
+```
 
 ---
 
@@ -202,4 +226,4 @@ The Credit Domain becomes:
 
 > Credit does not decide. It interprets.
 
-```
+````
