@@ -58,6 +58,17 @@ Generic opinion, like, compliment, hypothetical statement or unprompted enthusia
 5. Do not store identity documents or unnecessary sensitive data.
 6. Do not use participant names as evidence IDs.
 7. If a quote is recorded, minimize identifying context and obtain any permission required by the approved research process.
+8. Do not store raw direct-message threads, phone numbers, email addresses or contact lists in the evidence register.
+9. `Source location` must identify the controlled evidence location without exposing personal contact information; use an internal evidence reference rather than a public social profile or private message URL where possible.
+10. Participant IDs must be unique and pseudonymous. The mapping between a participant ID and optional follow-up contact must remain outside the evidence register.
+11. If the same participant supports multiple claims, preserve the participant ID linkage but do not treat repeated statements from that participant as independent participants.
+12. Organizational evidence must be anonymized unless the organization has explicitly approved attribution.
+
+## Data minimization
+
+The register is not the participant database. Store only the structured research attributes necessary to evaluate the hypotheses. Do not copy RUTs, passport numbers, medical details, financial account data, migration case numbers, prescriptions, authentication secrets or other sensitive source records.
+
+If a future research need requires identifiable or sensitive data, execution must stop until a separately approved protocol establishes necessity, lawful handling, access control and retention rules.
 
 ## Analysis summary template
 
@@ -70,7 +81,21 @@ Segments affected:
 Key uncertainty:
 Current status: supported / mixed / not supported / untested
 Decision implication:
+Sampling limitation:
+Independence check:
 ```
+
+## Independence check
+
+For every material conclusion, the analyst must state whether the supporting evidence comes from:
+
+- one participant;
+- multiple independent participants;
+- multiple channels;
+- multiple segments;
+- one or more independent organizations.
+
+Repeated statements from the same participant, copied social comments, referrals from the same recruitment source and duplicated reports of the same event must not be counted as independent corroboration.
 
 ## Final R00 evidence standard
 
