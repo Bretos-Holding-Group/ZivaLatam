@@ -4,7 +4,7 @@
 **Version:** 0.2
 **Product:** ZivaID
 **Brand / ecosystem:** Ziva / ZivaLatam
-**Operating legal entities:** ZivaLatam [jurisdiction] SpA, when a jurisdiction-specific legal entity must be distinguished
+**Legal-entity naming convention:** ZivaLatam [jurisdiction] SpA, when a jurisdiction-specific legal entity must be distinguished
 **Holding:** Breto's Holding Group (BHG)
 **Phase:** Pre-market-validation / Pre-engineering
 
@@ -37,7 +37,7 @@ Core principle:
 
 ## 3. Universal login / identity provider
 
-ZivaID may operate as the identity provider for compatible ZivaLatam products.
+ZivaID is intended to operate as the identity provider for compatible ZivaLatam products and may support compatible external services where appropriate.
 
 A user may authenticate to ZivaPay, ZivaOS and future services through ZivaID instead of maintaining a separate identity for each product.
 
@@ -145,6 +145,8 @@ ZivaID, ZivaLatam and BHG do not acquire ownership of participant information me
 
 Applicable rights, custody, obligations and restrictions remain determined by the information type, participant roles, legal relationships and applicable law.
 
+The conceptual model treats participants as retaining the rights and control applicable to their information; it does not assume that ZivaID, ZivaLatam or BHG become owners merely by operating the infrastructure.
+
 ## 10. Portability
 
 Portability does not mean moving from "ZivaID Chile" to "ZivaID Perú", because those are not separate products.
@@ -165,7 +167,9 @@ ZivaLatam Colombia
 compatible external infrastructure
 ```
 
-The identity product remains ZivaID. Jurisdictional entities and regulatory environments may differ.
+The identity product remains ZivaID. Jurisdictional legal entities and regulatory environments may differ.
+
+Portability does not override data-localization, sector-specific retention, evidentiary, regulatory or other legal requirements.
 
 ## 11. Person and business identity
 
@@ -251,6 +255,8 @@ Consent should be contextual and, where appropriate, granular. Permissions may b
 A consent mechanism cannot override a legal or policy prohibition.
 
 Permissions should support expiration and revocation where applicable.
+
+Consent is one possible authorization mechanism; it is not necessarily the sole legal or technical basis for every permitted access.
 
 ## 17. Auditability
 
