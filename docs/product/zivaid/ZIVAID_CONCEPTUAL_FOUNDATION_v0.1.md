@@ -5,7 +5,29 @@
 **Product:** ZivaID
 **Ecosystem operator:** ZivaLatam
 **Holding:** Breto's Holding Group (BHG)
+**Governance chain:** ZivaID → ZivaLatam → BHG
+**Supreme internal authority:** BHG Constitution
 **Phase:** Pre-market-validation / Pre-engineering
+
+## Governance and authority
+
+ZivaID is a product of ZivaLatam and is therefore subordinate to the governance, standards and directives legitimately established by ZivaLatam. ZivaLatam operates within the governance authority of BHG and may not establish product rules that contradict the BHG Constitution or applicable higher-order BHG governance instruments.
+
+The internal ascending authority chain is:
+
+```text
+ZivaID
+  ↑
+ZivaLatam
+  ↑
+Breto's Holding Group (BHG)
+  ↑
+BHG Constitution — supreme internal governing authority
+```
+
+This chain describes internal organizational authority. Applicable law, regulation and binding external obligations remain superior to internal corporate rules and cannot be overridden by this document.
+
+No ZivaID document, policy, product rule, technical implementation or future subsidiary-level rule may be interpreted as authorizing a departure from higher-level BHG/ZivaLatam governance requirements. Where a conflict is identified, the higher governing authority controls and the conflict must be escalated rather than silently resolved at product level.
 
 ## 1. Purpose
 
@@ -137,3 +159,7 @@ This document is conceptual. It is not a final legal policy, technical architect
 ## 17. Status
 
 This version is preserved as a historical conceptual baseline. Subsequent versions must not silently overwrite it. Changes must be recorded through explicit versioning and change history.
+
+## 18. Governance continuity rule
+
+This product baseline remains subordinate to the ZivaLatam governance layer and, through it, to BHG governance and the BHG Constitution. Future versions must preserve this authority relationship unless a higher-authority governing instrument is formally changed. Any proposed change that could alter the authority relationship must be explicitly escalated and recorded as a governance change, not introduced silently through product documentation or engineering.
