@@ -6,7 +6,53 @@
 **Brand / ecosystem:** Ziva / ZivaLatam
 **Legal-entity naming convention:** ZivaLatam [jurisdiction] SpA, when a jurisdiction-specific legal entity must be distinguished
 **Holding:** Breto's Holding Group (BHG)
+**Governance chain:** ZivaID → ZivaLatam → BHG
+**Supreme internal authority:** BHG Constitution
 **Phase:** Pre-market-validation / Pre-engineering
+
+## 0. Governance, authority and non-override rule
+
+ZivaID is a product of ZivaLatam. ZivaID therefore operates under the governance, standards, policies and directives legitimately established by ZivaLatam.
+
+ZivaLatam operates within the governance authority of Breto's Holding Group (BHG). ZivaLatam-level rules, product rules and future subsidiary-level rules may not contradict the BHG Constitution or applicable higher-order BHG governance instruments.
+
+The internal ascending authority chain is:
+
+```text
+ZivaID
+  ↑
+ZivaLatam
+  ↑
+Breto's Holding Group (BHG)
+  ↑
+BHG Constitution — supreme internal governing authority
+```
+
+This is the product's internal organizational authority chain. Applicable law, regulation, court orders and other binding external obligations remain superior to internal corporate governance and cannot be overridden by ZivaID, ZivaLatam or BHG product documentation.
+
+### Authority rule
+
+No ZivaID:
+
+- product requirement;
+- policy;
+- technical design;
+- API contract;
+- data rule;
+- authorization rule;
+- credential rule;
+- operational procedure;
+- future subsidiary integration;
+
+may be interpreted as authority to weaken, bypass, contradict or silently alter a valid higher-level BHG or ZivaLatam directive.
+
+Where a conflict is identified, the conflict must be escalated to the appropriate higher governance layer and resolved through an explicit, traceable governance decision. Product documentation and engineering implementation must not silently resolve an authority conflict in favor of the lower layer.
+
+### Governance inheritance
+
+ZivaID inherits applicable constraints from ZivaLatam and, through ZivaLatam, from BHG. A future ZivaID version may add product-specific rules, but those rules are subordinate rules and cannot supersede higher-authority governance.
+
+This relationship must be preserved throughout product evolution.
 
 ## 1. Product identity and corporate hierarchy
 
@@ -300,10 +346,20 @@ The hypothesis must be tested rather than assumed true.
 
 ## 23. Version relationship
 
-v0.2 is an explicit evolution of the historical v0.1 baseline. v0.1 is preserved unchanged for traceability. Material differences are recorded in `ZIVAID_VERSION_HISTORY.md`.
+v0.2 is an explicit evolution of the historical v0.1 baseline. v0.1 is preserved as the historical conceptual baseline and the material evolution is recorded in `ZIVAID_VERSION_HISTORY.md`.
 
 ## 24. Next phase
 
 The next authorized phase after independent verification of this conceptual baseline is **ZivaID Market Validation R00**.
 
 No production engineering should begin solely because this document exists.
+
+## 25. Governance continuity and change-control rule
+
+The authority relationship defined in Section 0 is itself a controlled governance constraint:
+
+> **ZivaID → ZivaLatam → BHG → BHG Constitution**
+
+Future ZivaID versions may refine product behavior, but may not weaken, bypass or reinterpret higher-level authority through product documentation alone. Any proposed change affecting governance boundaries, delegation, authority, or the relationship between ZivaID and ZivaLatam/BHG requires explicit governance review and traceable approval at the appropriate higher layer before it becomes a product rule.
+
+A technical implementation that conflicts with a higher-level governance requirement is non-conforming even if the implementation is technically functional.
