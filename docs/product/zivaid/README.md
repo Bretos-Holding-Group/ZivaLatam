@@ -26,6 +26,7 @@ No ZivaID product rule, technical implementation, policy or future integration m
 - Current conceptual baseline: `ZIVAID_CONCEPTUAL_FOUNDATION_v0.2.md`
 - Evolution record: `ZIVAID_VERSION_HISTORY.md`
 - Pre-verification record: `ZIVAID_PRE_VERIFICATION_AUDIT_R00.md`
+- Post-merge verification record: `ZIVAID_POST_MERGE_VERIFICATION_R00.md`
 
 ## Corporate/product hierarchy
 
@@ -42,9 +43,9 @@ ZivaID is a single product. Jurisdiction-specific ZivaLatam legal entities are n
 
 ## Governance status
 
-The v0.1 and v0.2 conceptual artifacts are being preserved as an auditable evolution chain. v0.2 is pending independent verification and must not be treated as finally certified until that verification is completed.
+The v0.1 and v0.2 conceptual artifacts are preserved as an auditable evolution chain. **v0.2 passed the independent second-round verification recorded for PR #2 and was merged into `main` in merge commit `aa7a89e6dd7015e9972e0955a0209eb812fc59e9`.**
 
-The next authorized phase after verification is **ZivaID Market Validation R00**.
+The next authorized phase is **ZivaID Market Validation R00**. This does not constitute regulatory approval, production authorization, or proof of market demand.
 
 ## Change-control principle
 
