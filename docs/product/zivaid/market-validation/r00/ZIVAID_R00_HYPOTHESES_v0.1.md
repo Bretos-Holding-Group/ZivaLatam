@@ -31,9 +31,11 @@
 
 **Hypothesis:** Users and organizations see value in a credential that can be reused when it remains valid, relevant and authorized.
 
+**Evidence sought:** concrete current verification pain, reactions to reusable credentials, and organizational workflow implications.
+
 **Disconfirming signal:** users prefer repeated manual verification or organizations reject reusable evidence as operationally impractical.
 
-## H-005 — Trust is the critical adoption barrier
+## H-005 — Trust is a material adoption barrier
 
 **Hypothesis:** Trust, privacy, security, control and institutional legitimacy are among the strongest barriers to adoption.
 
@@ -81,11 +83,23 @@
 
 **Disconfirming signal:** participants consistently value the broad identity layer itself without needing a specific use case.
 
-## Operationalization rule
+## Operationalization lock
 
-The terms **meaningful share**, **meaningful cost**, **meaningful concentration** and **meaningful subset** are intentionally not treated as predetermined statistical thresholds in v0.1. They must be operationalized during analysis using triangulation, segment context, evidence strength and behavioral signals rather than arbitrary percentages.
+The terms **meaningful share**, **meaningful cost**, **meaningful concentration** and **meaningful subset** are not statistical claims in v0.1. However, their interpretation must not be chosen after the results are known.
 
-The final R00 report must disclose the operational rule used before applying it to the evidence. The rule must not be invented after reviewing only the favorable results.
+Before the first controlled R00 evidence is collected, the research team must record an analysis rule for each hypothesis specifying:
+
+1. the evidence types that can support the hypothesis;
+2. the minimum independence required for corroboration;
+3. the relevant segment or population scope;
+4. how contradictory evidence will affect classification;
+5. whether a quantitative threshold is being used and, if so, its exact value.
+
+If no quantitative threshold is appropriate, the pre-registered rule must use qualitative triangulation criteria and must state what combination of evidence would be sufficient, insufficient or contradictory.
+
+Once evidence collection begins, the analysis rule may not be changed to obtain a preferred outcome. Any necessary change must be versioned as a protocol amendment and applied prospectively, with the prior rule retained in the record.
+
+The final R00 report must disclose the pre-registered rule and any approved amendments before presenting the classification.
 
 ## Hypothesis dependency
 
@@ -130,6 +144,6 @@ Before a hypothesis is classified **Supported**, the analysis must identify:
 - at least one concrete experience or behavioral signal where applicable;
 - contradictory evidence reviewed;
 - recruitment and sampling limitations;
-- why the evidence is sufficient for the stated classification.
+- why the evidence is sufficient under the pre-registered analysis rule.
 
 No hypothesis is considered "validated" by raw count alone.
