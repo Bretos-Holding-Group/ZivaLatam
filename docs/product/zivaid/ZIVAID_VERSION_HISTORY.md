@@ -75,6 +75,22 @@ v0.2 preserves the v0.1 conceptual baseline and adds or clarifies:
 17. **Individual and business identity:** both people and organizations are first-class conceptual participants.
 18. **Health boundary:** health examples remain conceptual and require separate legal, regulatory, security and clinical validation before implementation.
 
+## Verification and merge closure
+
+**v0.2 verification status:** Independently verified in the second-round review associated with PR #2.
+
+**PR:** #2 — `docs(product): establish ZivaID conceptual foundation v0.1 and v0.2`
+
+**Base SHA:** `fb986b276552a38e9016442301358700e554d4f8`
+
+**Verified head SHA:** `7b5cb5944807aa2de7852abd5d0b0caa916366ef`
+
+**Merge commit:** `aa7a89e6dd7015e9972e0955a0209eb812fc59e9`
+
+**Merge state:** merged into `main`.
+
+This closure records documentary and governance verification of the conceptual baseline. It does not constitute legal, regulatory, security, clinical, financial or market certification.
+
 ## Versioning rule
 
 Historical versions must remain immutable in substance. Future conceptual changes require a new version and an explicit change record. No version may silently overwrite an earlier baseline.
