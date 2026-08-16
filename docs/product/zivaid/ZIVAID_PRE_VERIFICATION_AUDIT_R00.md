@@ -5,10 +5,32 @@
 **Branch:** `agent/zivaid-foundation-v0-2`
 **PR:** #2
 **Purpose:** Internal pre-verification review and correction record
+**Governance chain:** ZivaID → ZivaLatam → BHG
+**Supreme internal authority:** BHG Constitution
+
+## 0. Governance authority check
+
+The ZivaID documentation is subordinate to the following internal authority chain:
+
+```text
+ZivaID
+  ↑
+ZivaLatam
+  ↑
+Breto's Holding Group (BHG)
+  ↑
+BHG Constitution — supreme internal governing authority
+```
+
+This hierarchy is a required control, not merely descriptive metadata. ZivaID documentation, product policies and future engineering must not weaken, bypass, contradict or silently reinterpret higher-level ZivaLatam or BHG directives.
+
+Applicable law, regulation and binding external obligations remain superior to internal corporate governance.
+
+Any conflict between this product documentation and a higher-authority instrument must be escalated and resolved through explicit governance action. It must not be resolved silently at product or engineering level.
 
 ## 1. Audit objective
 
-This review was performed before independent verification to identify and correct documentation, terminology, lineage and conceptual-boundary issues that could prevent a clean second-round verification.
+This review was performed before independent verification to identify and correct documentation, terminology, lineage, authority and conceptual-boundary issues that could prevent a clean second-round verification.
 
 This document is **not** the independent verification certificate and does not replace the independent verification stage.
 
@@ -20,6 +42,7 @@ This document is **not** the independent verification certificate and does not r
 - ZivaID Product Documentation README
 - PR #2 metadata and changed-file set
 - Branch relationship to `main`
+- Product-to-ecosystem-to-holding authority relationship
 
 ## 3. Structural findings
 
@@ -47,9 +70,17 @@ This document is **not** the independent verification certificate and does not r
 
 **Severity:** Medium; resolved.
 
+### F-04 — Governance authority chain
+
+**Finding:** The product artifacts identified ZivaID as a ZivaLatam product but did not explicitly define the ascending authority relationship required to prevent lower-level product documentation or engineering from overriding higher-level BHG/ZivaLatam governance.
+
+**Disposition:** Corrected across the ZivaID documentation set. The documents now explicitly define `ZivaID → ZivaLatam → BHG → BHG Constitution` and establish a non-override and escalation rule.
+
+**Severity:** Critical for governance integrity; resolved for pre-verification.
+
 ## 4. Conceptual findings
 
-### F-04 — Product / jurisdiction distinction
+### F-05 — Product / jurisdiction distinction
 
 **Finding:** The conceptual model needed an explicit distinction between ZivaID as a single product and ZivaLatam's jurisdictional legal/operational structure.
 
@@ -57,7 +88,7 @@ This document is **not** the independent verification certificate and does not r
 
 **Severity:** High; resolved.
 
-### F-05 — Universal login versus universal data access
+### F-06 — Universal login versus universal data access
 
 **Finding:** Universal login could be misread as universal data access.
 
@@ -65,7 +96,7 @@ This document is **not** the independent verification certificate and does not r
 
 **Severity:** Critical conceptual boundary; resolved.
 
-### F-06 — Reusable credentials versus unconditional re-KYC elimination
+### F-07 — Reusable credentials versus unconditional re-KYC elimination
 
 **Finding:** Reuse of verified credentials must not be represented as a universal regulatory guarantee.
 
@@ -73,7 +104,7 @@ This document is **not** the independent verification certificate and does not r
 
 **Severity:** High; resolved.
 
-### F-07 — Data ownership versus operational custody
+### F-08 — Data ownership versus operational custody
 
 **Finding:** Absolute statements about ownership would be legally unsafe across different data types and jurisdictions.
 
@@ -81,7 +112,7 @@ This document is **not** the independent verification certificate and does not r
 
 **Severity:** High; resolved.
 
-### F-08 — Portability
+### F-09 — Portability
 
 **Finding:** Portability needed to be defined without implying country-specific ZivaID products or unrestricted cross-border movement of every data element.
 
@@ -89,7 +120,7 @@ This document is **not** the independent verification certificate and does not r
 
 **Severity:** High; resolved.
 
-### F-09 — Consent as sole authorization basis
+### F-10 — Consent as sole authorization basis
 
 **Finding:** Consent alone cannot be treated as the universal legal basis or authorization mechanism for every access scenario.
 
@@ -97,7 +128,7 @@ This document is **not** the independent verification certificate and does not r
 
 **Severity:** High; resolved.
 
-### F-10 — Health domain
+### F-11 — Health domain
 
 **Finding:** Health examples could otherwise be interpreted as an implementation commitment.
 
@@ -107,7 +138,7 @@ This document is **not** the independent verification certificate and does not r
 
 ## 5. Scope-control findings
 
-### F-11 — Premature engineering
+### F-12 — Premature engineering
 
 **Finding:** The concept contains substantial future functionality and could be mistaken for an engineering authorization.
 
@@ -115,7 +146,7 @@ This document is **not** the independent verification certificate and does not r
 
 **Severity:** High; resolved.
 
-### F-12 — Market assumptions
+### F-13 — Market assumptions
 
 **Finding:** Ecosystem benefits such as reduced onboarding and faster financial evaluation are hypotheses, not demonstrated market facts.
 
@@ -129,6 +160,9 @@ The branch is considered **pre-verification ready** when the following condition
 
 - v0.1 is preserved separately;
 - v0.2 contains the corrected conceptual model;
+- the ZivaID → ZivaLatam → BHG authority chain is explicit;
+- the BHG Constitution is identified as the supreme internal authority;
+- product documentation contains a non-override and escalation rule;
 - version history records material evolution;
 - no direct merge to `main` has occurred;
 - the PR remains a draft pending independent verification;
@@ -141,18 +175,21 @@ The independent verifier should specifically verify:
 
 1. changed-file completeness;
 2. branch/base relationship;
-3. preservation of v0.1;
+3. preservation of v0.1 and whether its substantive historical content remains uncontaminated by later decisions;
 4. exact v0.1 → v0.2 lineage;
 5. terminology and corporate hierarchy;
-6. absence of country-specific ZivaID product claims;
-7. authentication/authorization separation;
-8. service-scoped access;
-9. sovereignty/non-appropriation wording;
-10. portability boundaries;
-11. health-domain boundaries;
-12. version-history consistency;
-13. absence of unintended changes outside the ZivaID documentation scope;
-14. whether the PR is ready for a final independent PASS/FAIL decision.
+6. explicit ZivaID → ZivaLatam → BHG authority chain;
+7. BHG Constitution identified as supreme internal authority without implying it overrides applicable law;
+8. absence of country-specific ZivaID product claims;
+9. authentication/authorization separation;
+10. service-scoped access;
+11. sovereignty/non-appropriation wording;
+12. portability boundaries;
+13. health-domain boundaries;
+14. version-history consistency;
+15. non-override/escalation rule consistency across all five documents;
+16. absence of unintended changes outside the ZivaID documentation scope;
+17. whether the PR is ready for a final independent PASS/FAIL decision.
 
 ## 8. Decision
 
