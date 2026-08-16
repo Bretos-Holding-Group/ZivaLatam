@@ -81,6 +81,35 @@
 
 **Disconfirming signal:** participants consistently value the broad identity layer itself without needing a specific use case.
 
+## Operationalization rule
+
+The terms **meaningful share**, **meaningful cost**, **meaningful concentration** and **meaningful subset** are intentionally not treated as predetermined statistical thresholds in v0.1. They must be operationalized during analysis using triangulation, segment context, evidence strength and behavioral signals rather than arbitrary percentages.
+
+The final R00 report must disclose the operational rule used before applying it to the evidence. The rule must not be invented after reviewing only the favorable results.
+
+## Hypothesis dependency
+
+The hypotheses are not independent claims of market demand. They form a progression:
+
+```text
+H-001 / H-002
+problem + severity
+        ↓
+H-003 / H-004
+solution characteristics
+        ↓
+H-005 / H-009
+trust + control constraints
+        ↓
+H-006 / H-010
+initial market wedge
+        ↓
+H-007 / H-008
+organizational + user behavioral intent
+```
+
+A positive result for a downstream hypothesis cannot compensate for a failed foundational problem hypothesis.
+
 ## Falsification rule
 
 A hypothesis must not be marked "validated" merely because no contradiction was observed. Each hypothesis should receive one of:
@@ -91,3 +120,16 @@ A hypothesis must not be marked "validated" merely because no contradiction was 
 - **Untested** — insufficient evidence.
 
 R00 conclusions remain provisional and must identify sample limitations.
+
+## Evidence minimum for classification
+
+Before a hypothesis is classified **Supported**, the analysis must identify:
+
+- the relevant independent evidence IDs;
+- the participant/organization segments represented;
+- at least one concrete experience or behavioral signal where applicable;
+- contradictory evidence reviewed;
+- recruitment and sampling limitations;
+- why the evidence is sufficient for the stated classification.
+
+No hypothesis is considered "validated" by raw count alone.
