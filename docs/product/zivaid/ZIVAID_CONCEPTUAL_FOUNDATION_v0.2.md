@@ -1,6 +1,6 @@
 # ZivaID — Conceptual Foundation v0.2
 
-**Status:** Current conceptual baseline pending independent verification
+**Status:** Independently verified and merged baseline
 **Version:** 0.2
 **Product:** ZivaID
 **Brand / ecosystem:** Ziva / ZivaLatam
@@ -8,7 +8,8 @@
 **Holding:** Breto's Holding Group (BHG)
 **Governance chain:** ZivaID → ZivaLatam → BHG
 **Supreme internal authority:** BHG Constitution
-**Phase:** Pre-market-validation / Pre-engineering
+**Phase:** Post-conceptual-verification / Pre-market-validation
+**Verification record:** `ZIVAID_POST_MERGE_VERIFICATION_R00.md`
 
 ## 0. Governance, authority and non-override rule
 
@@ -336,7 +337,7 @@ The value of ZivaID should derive from trust, interoperability, usability, stand
 
 ## 21. Scope boundary
 
-This version is still conceptual. It is not a final legal framework, privacy policy, technical architecture, API specification, database schema, regulatory approval, production implementation or authorization to process real sensitive information.
+This version remains conceptual. It is not a final legal framework, privacy policy, technical architecture, API specification, database schema, regulatory approval, production implementation or authorization to process real sensitive information.
 
 ## 22. Market hypothesis
 
@@ -350,7 +351,7 @@ v0.2 is an explicit evolution of the historical v0.1 baseline. v0.1 is preserved
 
 ## 24. Next phase
 
-The next authorized phase after independent verification of this conceptual baseline is **ZivaID Market Validation R00**.
+The next authorized phase is **ZivaID Market Validation R00**.
 
 No production engineering should begin solely because this document exists.
 
@@ -363,3 +364,9 @@ The authority relationship defined in Section 0 is itself a controlled governanc
 Future ZivaID versions may refine product behavior, but may not weaken, bypass or reinterpret higher-level authority through product documentation alone. Any proposed change affecting governance boundaries, delegation, authority, or the relationship between ZivaID and ZivaLatam/BHG requires explicit governance review and traceable approval at the appropriate higher layer before it becomes a product rule.
 
 A technical implementation that conflicts with a higher-level governance requirement is non-conforming even if the implementation is technically functional.
+
+## 26. Verification and merge record
+
+v0.2 completed the independent second-round verification associated with PR #2. The PR was approved and merged into `main` as merge commit `aa7a89e6dd7015e9972e0955a0209eb812fc59e9`.
+
+This verification establishes documentary and governance baseline status only. It does not constitute legal, regulatory, security, clinical, financial or market certification.
