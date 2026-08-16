@@ -66,6 +66,7 @@ Do not describe ZivaID as already operational.
 - Do not approach people who appear unable to freely participate.
 - Avoid interviewing minors in R00.
 - Stop immediately if the person declines.
+- Do not imply that you represent a government agency, bank, hospital, university, employer or other institution.
 
 ### During
 
@@ -74,10 +75,12 @@ Do not describe ZivaID as already operational.
 - Do not request RUT, passport number, medical records, financial account details, prescriptions or other sensitive records.
 - Record only the minimum research attributes necessary.
 - Use an anonymous participant ID.
+- Do not photograph or record a participant without a separate, explicit permission process.
+- Do not collect names or contact details unless a separate voluntary follow-up process requires them.
 
 ### After
 
-Record the evidence as soon as practical, using the evidence template.
+Record the evidence as soon as practical, using the evidence template. Do not rely on memory for material findings.
 
 ## 6. Digital interview protocol
 
@@ -87,7 +90,7 @@ Example prompt:
 
 > ¿Cuántas veces durante el último año has tenido que entregar nuevamente un documento o información que ya habías entregado? ¿Qué pasó?
 
-Comments and direct messages may be used to recruit voluntary interviews. Do not copy personal information into the research register unless necessary.
+Comments and direct messages may be used to recruit voluntary interviews. Do not copy personal information into the research register unless necessary. If a participant contacts the researcher privately, use the same voluntary and data-minimization rules as a field interview.
 
 ## 7. B2B interview protocol
 
@@ -108,6 +111,8 @@ Questions:
 9. ¿Qué requisitos de seguridad, privacidad o regulación limitan el proceso?
 10. ¿Qué tendría que demostrar una solución externa para que la probaran?
 11. ¿Qué resultado justificaría un piloto?
+
+Do not request customer records, credentials, security architecture, confidential pricing, regulated data or proprietary documents. Ask about workflow and aggregate operational impact instead.
 
 ## 8. Interviewer anti-bias rules
 
@@ -152,8 +157,28 @@ Minimum fields:
 - willingness to follow up;
 - evidence reference.
 
+Age band and location are optional research attributes and should be omitted when they are not needed for the analysis. Do not collect exact date of birth, exact address or other unnecessary identifying information.
+
 ## 10. Consent and sensitive information
 
 R00 does not require collection of sensitive source documents. If a participant volunteers sensitive information, do not copy it into the research register unless a separately approved protocol establishes necessity and lawful handling.
 
 The research record should prefer structured summaries over raw personal information.
+
+For follow-up, obtain explicit voluntary permission and use a separate contact mechanism from the evidence register. The participant must be free to decline follow-up without affecting the research interaction.
+
+## 11. Interview quality gate
+
+An interview is considered usable evidence only when the record contains enough context to distinguish:
+
+- what the participant actually experienced;
+- what the researcher asked or introduced;
+- what the participant inferred or believes;
+- what the participant currently does;
+- whether the evidence supports or contradicts a hypothesis.
+
+A hypothetical answer obtained only after the ZivaID concept is introduced must not be recorded as evidence that the underlying problem already exists.
+
+## 12. Researcher safety and conduct
+
+Street research is voluntary research, not solicitation or enforcement. The researcher must prioritize personal safety, avoid confrontational situations and stop the interaction whenever the participant or researcher is uncomfortable. Do not follow, corner or repeatedly approach a person who declines.
