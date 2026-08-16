@@ -80,7 +80,7 @@ Researchers must not imply that ZivaID already exists as a production service, h
 
 ## 6. Research populations
 
-Initial exploratory quotas are targets, not claims of statistical representation:
+Initial exploratory quotas are **non-exclusive research targets**, not a statistically representative sample and not additive demographic claims. A participant may belong to more than one segment; the primary segment used for analysis must be recorded consistently.
 
 | Segment | Initial target |
 |---|---:|
@@ -93,7 +93,7 @@ Initial exploratory quotas are targets, not claims of statistical representation
 
 Target: approximately 100 short research interactions, followed by 30–50 deeper interviews where feasible.
 
-The quotas may be revised if evidence shows that the problem is concentrated elsewhere. Any material change must be recorded.
+The quotas are exploratory and may be revised if evidence shows that the problem is concentrated elsewhere. Any material change must be recorded before it is used to reinterpret results. The R00 must report actual sample composition, recruitment source and limitations; quotas must never be presented as population statistics.
 
 ## 7. Channels
 
@@ -113,11 +113,11 @@ The public-facing research title is intentionally neutral to reduce solution-ind
 
 ### Direct field research
 
-Street interviews in Santiago may be conducted using the approved interview protocol. Researchers must not block pedestrian movement, enter restricted areas, or create pressure to participate.
+Street interviews in Santiago may be conducted using the approved interview protocol. Researchers must not block pedestrian movement, enter restricted areas, create pressure to participate, or imply institutional authority.
 
 ### B2B research
 
-Organizations may be approached to understand verification, onboarding, credential collection, compliance and operational friction.
+Organizations may be approached to understand verification, onboarding, credential collection, compliance and operational friction. Do not request confidential business information, security details, customer records or regulated records merely for validation.
 
 ## 8. Zero-budget constraint
 
@@ -177,7 +177,7 @@ Higher-value signals include:
 - organization offers a process owner for a deeper interview;
 - organization expresses willingness to run a pilot.
 
-No single threshold automatically certifies market demand.
+No single metric or arbitrary percentage automatically certifies market demand.
 
 ## 11. Decision framework
 
@@ -227,6 +227,8 @@ Do not collect sensitive data unless a future approved protocol explicitly estab
 
 If a participant spontaneously offers sensitive information, the researcher should avoid recording it unless necessary for the approved research purpose.
 
+The research register must not contain raw identity documents, medical records, financial account information, migration documents, prescriptions, authentication secrets or other unnecessary sensitive source material. Any follow-up contact information must be kept outside the evidence register and linked only through a non-identifying participant reference.
+
 ## 14. Change control
 
 This v0.1 document is the controlled starting point for R00. Changes to hypotheses, sampling, metrics, privacy rules, governance relationships or decision thresholds must be versioned and traceable.
@@ -244,3 +246,38 @@ Only after evidence collection and analysis may a later R00 result document stat
 The first success condition is not "ZivaID wins." It is:
 
 > **The research generates enough reliable, traceable and sufficiently diverse evidence to make a rational decision about what ZivaID should do next.**
+
+## 17. Evidence sufficiency and decision discipline
+
+R00 must not convert the exploratory targets into claims of statistical significance. The decision is based on triangulation across independent participants, segments, channels and, where relevant, organizations.
+
+A hypothesis may be classified **Supported** only when the evidence package contains:
+
+1. multiple independent observations or organization cases relevant to the claim;
+2. at least one concrete recent experience or observable behavioral signal, rather than opinion alone;
+3. evidence from the participant's pre-concept discovery where the hypothesis concerns an existing problem;
+4. contradictory evidence explicitly reviewed;
+5. a documented limitation statement explaining sample and recruitment bias.
+
+A hypothesis may be classified **Not supported** when repeated evidence materially contradicts it or when the claimed problem/value is consistently weak despite adequate probing. **Mixed** and **Untested** must be used whenever the evidence does not justify either conclusion.
+
+The final R00 decision must distinguish:
+
+- **problem evidence** — evidence that the underlying problem exists;
+- **solution evidence** — evidence that the proposed ZivaID direction is attractive;
+- **behavioral evidence** — evidence that participants or organizations actually intend to act;
+- **market evidence** — evidence sufficient to justify the next commercial experiment.
+
+No conclusion may skip directly from social engagement or stated interest to market validation.
+
+## 18. Researcher independence
+
+The researcher must record observations before interpreting them. When feasible, analysis should be performed from the evidence register rather than memory. Any later change to a participant classification must be traceable.
+
+The person conducting interviews must not delete, suppress or rewrite contradictory evidence merely because it conflicts with ZivaID's preferred direction.
+
+## 19. R00 execution gate
+
+**No controlled R00 evidence collection begins until this protocol baseline has completed its independent review and approval.**
+
+A later approved protocol revision may change this gate only through versioned change control.
