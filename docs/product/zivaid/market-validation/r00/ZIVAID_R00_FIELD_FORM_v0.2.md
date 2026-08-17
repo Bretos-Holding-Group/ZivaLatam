@@ -5,6 +5,8 @@
 
 ## 1. Interview header
 
+- Wave ID: `R00-W01`
+- Instrument ID: `R00-INSTR-v0.2`
 - Participant ID:
 - Evidence ID:
 - Date:
@@ -14,6 +16,7 @@
 - Recruitment source:
 - Interview completed: yes / no
 - Usable evidence: yes / no / quarantine
+- Protocol deviation ID (if any):
 
 ## 2. Discovery record — complete before concept exposure
 
@@ -107,11 +110,14 @@ Mark the record **usable** only if:
 - [ ] Participant ID is unique.
 - [ ] Source channel is known.
 - [ ] Discovery occurred before concept exposure.
+- [ ] Instrument ID and wave ID are recorded.
+- [ ] Concept ID is recorded or explicitly marked `not_exposed`.
 - [ ] At least one concrete context is recorded or the participant clearly contradicted the problem.
 - [ ] Researcher interpretation is separated from participant experience.
 - [ ] No unnecessary sensitive source material is stored.
 - [ ] Duplicate participation was checked.
 - [ ] Any contradiction was preserved.
+- [ ] Any protocol deviation is recorded.
 
 If any critical condition fails, mark `quarantine` and explain why.
 
@@ -136,3 +142,5 @@ Avoid:
 ## 8. Record integrity
 
 Never reconstruct an interview from memory as if it were contemporaneous evidence. If a record is created later, mark the delay and downgrade confidence as appropriate.
+
+A record must remain traceable to the exact frozen instrument/concept version used. If that cannot be established, quarantine the record until provenance is resolved.
