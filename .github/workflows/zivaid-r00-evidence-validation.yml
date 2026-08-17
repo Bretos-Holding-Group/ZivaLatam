@@ -1,0 +1,30 @@
+name: ZivaID R00 Evidence Validation Engine
+
+on:
+  pull_request:
+    paths:
+      - 'tools/zivaid/**'
+      - 'docs/product/zivaid/market-validation/r00/w01/ZIVAID_R00_EVIDENCE_VALIDATION_ENGINE_v0.1.md'
+      - 'docs/product/zivaid/market-validation/r00/w01/ZIVAID_R00_EVIDENCE_VALIDATION_TEST_MATRIX_v0.1.md'
+      - '.github/workflows/zivaid-r00-evidence-validation.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/zivaid/**'
+      - 'docs/product/zivaid/market-validation/r00/w01/ZIVAID_R00_EVIDENCE_VALIDATION_ENGINE_v0.1.md'
+      - 'docs/product/zivaid/market-validation/r00/w01/ZIVAID_R00_EVIDENCE_VALIDATION_TEST_MATRIX_v0.1.md'
+      - '.github/workflows/zivaid-r00-evidence-validation.yml'
+
+jobs:
+  validate-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run deterministic unit tests
+        working-directory: tools/zivaid
+        run: python -m unittest -v test_r00_evidence_validation_engine.py
