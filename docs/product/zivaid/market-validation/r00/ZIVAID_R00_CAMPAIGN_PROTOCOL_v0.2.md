@@ -4,6 +4,8 @@
 **Working public title:** ¿Cuánto de tu identidad tienes que repetir?
 **Internal name:** Campaña ZivaID
 **Budget:** CLP $0 paid acquisition
+**Instrument ID:** `R00-INSTR-v0.2`
+**Concept ID:** `CONCEPT-R00-v0.2`
 
 ## 1. Purpose
 
@@ -123,6 +125,38 @@ Freeze these variables for the first wave:
 - participant ID format;
 - source channel labels.
 
+Each interaction record must store `instrument_id`, `concept_id` (or `not_exposed`) and `wave_id`.
+
+The first controlled wave is frozen as:
+
+- `wave_id`: `R00-W01`
+- `instrument_id`: `R00-INSTR-v0.2`
+- `concept_id`: `CONCEPT-R00-v0.2`
+
+A later wave may use a new instrument/version only through a traceable amendment.
+
+### Required deviation log
+
+Every researcher must record protocol deviations as they occur:
+
+- deviation ID;
+- participant ID or interaction ID;
+- timestamp/date band;
+- exact step/question affected;
+- what actually happened;
+- reason;
+- whether the deviation occurred before or after concept exposure;
+- impact on comparability;
+- disposition: usable / quarantine / excluded.
+
+A researcher may not silently improvise a changed question and treat the result as equivalent to a controlled interaction.
+
+### Version integrity
+
+Before each wave, the coordinator must archive the exact instrument and concept text used. The archive must contain the version identifier and content hash where technically available. The evidence register must point to that version.
+
+The objective is reproducibility: a reviewer must be able to determine exactly which research instrument produced each evidence record.
+
 Variables that may change only through amendment:
 
 - target segment quotas;
@@ -165,7 +199,8 @@ Each wave must produce:
 8. concept-test reactions separated from discovery findings;
 9. behavioral signals;
 10. sampling limitations;
-11. recommended amendment, continuation or stop decision.
+11. protocol deviation summary;
+12. recommended amendment, continuation or stop decision.
 
 ## 11. Privacy boundary
 
