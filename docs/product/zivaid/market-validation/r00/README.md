@@ -1,73 +1,72 @@
 # ZivaID Market Validation R00
 
-**Version:** 0.1
-**Status:** Draft — pre-execution
+**Baseline:** v0.1 research protocol
+**Current controlled amendment:** v0.2 research hardening
+**Status:** Pre-execution — independent review required
 **Product:** ZivaID
 **Brand / ecosystem:** Ziva / ZivaLatam
 **Holding:** Breto's Holding Group (BHG)
 **Governance chain:** ZivaID → ZivaLatam → BHG → BHG Constitution
-**Baseline:** ZivaID Conceptual Foundation v0.2
 **Market-validation state:** Not yet validated
 
 ## Purpose
 
-This directory contains the controlled documentation for ZivaID Market Validation R00 v0.1.
-
 R00 is an evidence-generation phase. It is not a marketing certification, product-market-fit declaration, regulatory approval, technical certification, or authorization to process sensitive personal data.
-
-## Core rule
 
 > Validate the problem and the demand before validating our preferred solution.
 
-The research must be capable of producing evidence that contradicts or materially changes the current ZivaID hypothesis.
+## Controlled documents
 
-## Scope
+### v0.1 baseline
 
-R00 investigates whether people and organizations experience meaningful problems related to repeated identity or document verification, redundant onboarding, excessive disclosure, fragmented credentials, difficulty proving a fact without exposing unrelated information, portability, interoperability, trust, and verification friction.
+- `ZIVAID_MARKET_VALIDATION_R00_v0.1.md` — research charter and governance.
+- `ZIVAID_R00_HYPOTHESES_v0.1.md` — falsifiable hypotheses and operationalization lock.
+- `ZIVAID_R00_INTERVIEW_PROTOCOL_v0.1.md` — interview protocol and anti-bias rules.
+- `ZIVAID_R00_EVIDENCE_REGISTER_TEMPLATE_v0.1.md` — evidence-record structure and traceability.
 
-R00 may explore ZivaID as a candidate response, but must not assume that ZivaID is the correct solution.
+### v0.2 research hardening
 
-## Research channels
+- `ZIVAID_R00_ANALYSIS_PLAN_v0.2.md` — pre-registered analysis and decision rules.
+- `ZIVAID_R00_CAMPAIGN_PROTOCOL_v0.2.md` — neutral verification campaign and two-stage discovery/concept design.
+- `ZIVAID_R00_FIELD_FORM_v0.2.md` — controlled field record and quality gate.
+- `ZIVAID_R00_SAMPLING_PLAN_v0.2.md` — recruitment, diversity, duplicate and rebalancing controls.
+- `ZIVAID_R00_DATA_DICTIONARY_v0.2.md` — data definitions, privacy boundary and QA rules.
+- `ZIVAID_R00_RESULTS_TEMPLATE_v0.2.md` — controlled result and decision structure.
 
-- Organic social content: Instagram, Facebook and TikTok.
-- Direct interviews in Santiago and other accessible contexts.
-- Voluntary follow-up interviews through WhatsApp or equivalent channels.
-- Direct B2B research with organizations that perform verification or onboarding.
+## Campaign
 
-Paid acquisition is out of scope for the initial zero-budget experiment.
+**Public research title:** ¿Cuánto de tu identidad tienes que repetir?
 
-## Governance
+**Internal name:** Campaña ZivaID
 
-R00 is subordinate to the conceptual foundation and inherits:
+The public campaign is intentionally neutral. ZivaID is not introduced until after the participant has described their own experience.
 
-```text
-ZivaID
-   ↑
-ZivaLatam
-   ↑
-Breto's Holding Group (BHG)
-   ↑
-BHG Constitution
-```
+Initial paid acquisition budget: **CLP $0**.
 
-Applicable law and binding external obligations remain superior to internal corporate governance.
-
-R00 may recommend changes to ZivaID, but cannot independently alter product governance, authority boundaries, ownership principles, privacy commitments or higher-level BHG/ZivaLatam directives.
-
-## Decision state
-
-**NO MARKET CONCLUSION HAS BEEN REACHED.**
+## Research sequence
 
 ```text
-Draft protocol
-   ↓
-Pilot / field execution
-   ↓
-Evidence collection
-   ↓
-Analysis
-   ↓
-Decision
-   ↓
-R00 closure / next iteration
+Neutral campaign / recruitment
+        ↓
+Discovery without solution exposure
+        ↓
+Concrete recent incident
+        ↓
+Frequency + consequence + workaround
+        ↓
+Evidence QA
+        ↓
+Optional neutral concept test
+        ↓
+Behavioral signal
+        ↓
+Triangulated analysis
+        ↓
+Decision / amendment / next experiment
 ```
+
+## Certification boundary
+
+R00 can establish only what the evidence package supports. It must preserve negative evidence, sampling limitations, contradictions and protocol changes. No result may be presented as market validation solely because a participant expressed enthusiasm or because a social post received engagement.
+
+Controlled execution remains gated until the protocol baseline and its v0.2 amendment receive the required independent review/approval.
