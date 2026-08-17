@@ -54,7 +54,7 @@ A use case is a candidate wedge when it has the highest observed concentration a
 
 ### H-007 — Organizational demand
 
-Require at least 8 independent organizations or distinct organizational process owners for an exploratory organizational pattern. A stronger signal requires at least 3 organizations willing to continue to a workflow review or pilot discussion. No customer commitment is implied by an interview statement alone.
+Require at least 8 independent organizations for an exploratory organizational pattern. Employees or process owners from the same organization may add workflow detail but do not increase the independent-organization count unless they represent genuinely separate decision units with independent authority. A stronger signal requires at least 3 organizations willing to continue to a workflow review or pilot discussion. No customer commitment is implied by an interview statement alone.
 
 ### H-008 — Willingness to test
 
@@ -70,7 +70,7 @@ Compare specific use-case choices against generic interest in the broad identity
 
 ## 4. Independence rules
 
-The unit of corroboration is the independent participant, organization or distinct process owner, not the number of statements. Multiple records from one participant do not increase independent sample size.
+The unit of corroboration is the independent participant or organization, not the number of statements. Distinct process owners may provide additional workflow evidence, but do not create independent organizational demand unless they represent genuinely separate decision units.
 
 Copied comments, coordinated referrals from the same immediate group, duplicate reports of one event and repeated observations of the same organizational workflow are not independent corroboration.
 
