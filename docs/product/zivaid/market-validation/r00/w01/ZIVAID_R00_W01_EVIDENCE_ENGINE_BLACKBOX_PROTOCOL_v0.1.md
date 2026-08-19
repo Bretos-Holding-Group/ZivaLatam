@@ -2,7 +2,7 @@
 
 **Status:** Draft — controlled verification artifact
 **Scope:** Post-merge operational verification of the deterministic Evidence Validation Engine
-**Base implementation:** `7c9ff1ac1faf6d9c3b648bc7dfdfbf8a9e6fcf49`
+**Base implementation:** `cbcd7c407669aa984650628e8ceeb15d3c027cf9`
 
 ## 1. Objective
 
@@ -12,9 +12,15 @@ The black-box test is independent of the engine's internal unit-test assertions.
 
 ## 2. Test isolation
 
-All test records MUST use the namespace `BBX-R00-###` and must never use production identifiers such as `P-###` or `EVID-R00-###`.
+All fixtures MUST be synthetic and MUST use the reserved test identifier range:
 
-The black-box dataset is test-only. It must not be copied into the campaign evidence register, hypothesis counts, participant counts, coverage ledger or commercial results.
+- evidence: `EVID-R00-900001` and above;
+- participant: `P-900001` and above;
+- researcher: `R-900001` and above.
+
+These identifiers satisfy the public engine schema but are reserved for black-box execution and MUST never be persisted to the production Evidence Register, participant register, hypothesis counts, coverage ledger or campaign dataset.
+
+The black-box dataset is test-only. No real personal information, real participant identifiers, real evidence identifiers or real campaign observations may be used.
 
 ## 3. Required scenarios
 
@@ -60,7 +66,9 @@ Run the exact same input and ruleset at least twice.
 Expected: identical decision, rule results and ruleset/version identity.
 
 ### BBX-010 — Production-register isolation
-Verify that none of BBX-001 through BBX-009 creates or modifies a real `EVID-R00-###` record, participant count, hypothesis count or campaign dataset.
+Verify that none of BBX-001 through BBX-009 creates or modifies a production `EVID-R00-###` record, participant count, hypothesis count or campaign dataset.
+
+The suite must also verify that the input mapping is not mutated by validation.
 
 ## 4. Acceptance criteria
 
@@ -71,9 +79,10 @@ The black-box verification passes only if:
 3. contradiction is not treated as invalidity by itself;
 4. deterministic replay produces the same decision;
 5. the validation result contains traceable engine/ruleset/version identity;
-6. test identifiers remain outside production namespaces;
-7. no test data enters the W01 Evidence Register;
-8. failures are documented rather than manually overridden.
+6. all fixtures use the reserved synthetic identifier range;
+7. no test data enters the W01 Evidence Register or campaign datasets;
+8. validation does not mutate its supplied input mapping;
+9. failures are documented rather than manually overridden.
 
 ## 5. Evidence package
 
