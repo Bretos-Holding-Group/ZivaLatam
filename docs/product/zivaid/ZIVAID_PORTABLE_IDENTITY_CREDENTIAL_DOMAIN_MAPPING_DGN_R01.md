@@ -4,13 +4,13 @@
 **Product:** ZivaID
 **Parent baseline:** `ZIVAID_CONCEPTUAL_FOUNDATION_v0.2.md`
 **Purpose:** Descendant conceptual mapping
-**Scope:** Information domains, credential roles, issuer boundaries, verifier access, disclosure limits and default-protection boundaries.
+**Scope:** Information domains, credential roles, issuer boundaries, verifier access, disclosure limits, default-protection boundaries and a reserved future trust-mark capability.
 
 ## 1. Purpose
 
 This mapping organizes the kinds of information ZivaID may eventually represent without granting ZivaID authority over facts determined by external issuers.
 
-ZivaID may receive, preserve provenance for, correlate, verify according to available methods, and present authorized evidence or derived assertions. It does not originate external authority, create legal status, certify facts it cannot establish, or replace an issuer's verification process.
+ZivaID may receive, preserve provenance for, correlate under controlled conditions, verify according to available methods, and present authorized evidence or derived assertions. It does not originate external authority, create legal status, certify facts it cannot establish, or replace an issuer's verification process.
 
 ## 2. Core disclosure rule
 
@@ -61,7 +61,7 @@ The issuer or competent source remains responsible for the authority and meaning
 
 ### ZivaID
 
-ZivaID is an infrastructure participant. Depending on the credential and permitted verification method, it may record, preserve provenance, validate structural consistency, verify against an available source, correlate evidence, manage authorized presentation and communicate verification strength.
+ZivaID is an infrastructure participant. Depending on the credential and permitted verification method, it may record, preserve provenance, validate structural consistency, verify against an available source, correlate evidence under controlled conditions, manage authorized presentation and communicate verification strength.
 
 ### Verifier/consumer
 
@@ -143,8 +143,39 @@ This mapping establishes the following conceptual priorities:
 9. protection of security secrets from presentation flows;
 10. escalation to higher governance where product behavior conflicts with applicable constraints.
 
-## 10. Scope boundary
+## 10. Reserved future capability — ZivaID Trust Framework and Trust Mark
 
-This artifact is a proposed descendant mapping. It does not establish a production privacy policy, legal basis, retention schedule, technical security architecture, cryptographic design, database schema, API contract, regulatory approval, or authorization to process real sensitive data.
+A future ZivaID trust capability may be explored, including a ZivaID Trust Framework, explicit verification or quality criteria, and a distinctive ZivaID Trust Mark or Seal.
 
-Any promotion into policy, standard, architecture or implementation requires separate evidence, review and approval through the applicable governance chain.
+This capability is reserved as a **future conceptual possibility only**.
+
+Current status:
+
+- **capability:** FUTURE / NOT ACTIVE;
+- **current authority:** none is created by this mapping;
+- **activation:** requires a separate governance gate and explicit approval;
+- **scope:** must be defined before any mark, seal, rating or certification is issued or represented as active.
+
+A future ZivaID Trust Mark must not be represented as a governmental, legal or regulatory certification unless such authority actually exists and is explicitly applicable.
+
+If developed, the trust framework must separately define at minimum:
+
+- what the mark means and does not mean;
+- eligibility and evaluation criteria;
+- evidence and verification requirements;
+- issuer, evaluator and approval responsibilities;
+- independence and conflict-of-interest controls where applicable;
+- validity period, suspension, revocation and expiry rules;
+- auditability and dispute or correction processes;
+- permitted and prohibited use of the mark;
+- jurisdiction-specific legal and intellectual-property review before launch.
+
+A ZivaID Trust Mark, if ever activated, is distinct from the authority of an external issuer over the underlying fact, credential, authorization or legal status. A mark must communicate only the meaning established by its own approved criteria and must not imply external governmental or regulatory endorsement that does not exist.
+
+Potential intellectual-property protection for a future name, symbol, mark or related system is outside the scope of this mapping and requires separate jurisdiction-specific analysis and approval.
+
+## 11. Scope boundary
+
+This artifact is a proposed descendant mapping. It does not establish a production privacy policy, legal basis, retention schedule, technical security architecture, cryptographic design, database schema, API contract, regulatory approval, authorization to process real sensitive data, or an active ZivaID Trust Mark.
+
+Any promotion into policy, standard, architecture, implementation or trust-mark operation requires separate evidence, review and approval through the applicable governance chain.
