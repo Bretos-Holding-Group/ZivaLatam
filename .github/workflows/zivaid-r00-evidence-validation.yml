@@ -31,3 +31,5 @@ jobs:
         run: python -m unittest -v test_r00_evidence_validation_engine.py
       - name: Run black-box verification suite
         run: python -m unittest -v tests/zivaid/test_r00_evidence_engine_blackbox.py
+
+# Operational retrigger: preserve verification logic while forcing a PR synchronize event.
