@@ -4,15 +4,15 @@ on:
   pull_request:
     paths:
       - 'tools/zivaid/**'
-      - 'docs/product/zivaid/market-validation/r00/w01/ZIVAID_R00_EVIDENCE_VALIDATION_ENGINE_v0.1.md'
-      - 'docs/product/zivaid/market-validation/r00/w01/ZIVAID_R00_EVIDENCE_VALIDATION_TEST_MATRIX_v0.1.md'
+      - 'tests/zivaid/**'
+      - 'docs/product/zivaid/market-validation/r00/w01/**'
       - '.github/workflows/zivaid-r00-evidence-validation.yml'
   push:
     branches: [main]
     paths:
       - 'tools/zivaid/**'
-      - 'docs/product/zivaid/market-validation/r00/w01/ZIVAID_R00_EVIDENCE_VALIDATION_ENGINE_v0.1.md'
-      - 'docs/product/zivaid/market-validation/r00/w01/ZIVAID_R00_EVIDENCE_VALIDATION_TEST_MATRIX_v0.1.md'
+      - 'tests/zivaid/**'
+      - 'docs/product/zivaid/market-validation/r00/w01/**'
       - '.github/workflows/zivaid-r00-evidence-validation.yml'
 
 jobs:
@@ -28,3 +28,5 @@ jobs:
       - name: Run deterministic unit tests
         working-directory: tools/zivaid
         run: python -m unittest -v test_r00_evidence_validation_engine.py
+      - name: Run black-box verification suite
+        run: python -m unittest -v tests.zivaid.test_r00_evidence_validation_blackbox
