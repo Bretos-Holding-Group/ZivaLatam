@@ -9,7 +9,9 @@ on:
       - 'docs/product/zivaid/market-validation/r00/w01/**'
       - '.github/workflows/zivaid-r00-evidence-validation.yml'
   push:
-    branches: [main]
+    branches:
+      - main
+      - 'agent/zivaid-r00-evidence-engine-blackbox-v0-1'
     paths:
       - 'tools/zivaid/**'
       - 'tests/zivaid/**'
@@ -32,4 +34,4 @@ jobs:
       - name: Run black-box verification suite
         run: python -m unittest -v tests/zivaid/test_r00_evidence_engine_blackbox.py
 
-# Operational retrigger: preserve verification logic while forcing a PR synchronize event.
+# Diagnostic trigger: execute the same gate on the PR branch push while preserving test logic.
